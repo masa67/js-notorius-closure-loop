@@ -35,6 +35,7 @@ Open the URL in a browser: `http://localhost:3000/`
 
 # Version History
 
+* v.1.1: `MainCtrl.js` modified to make argument passing clearer.
 * v.1.0: The first functional version.
 
 # License

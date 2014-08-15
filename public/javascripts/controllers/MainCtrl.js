@@ -17,10 +17,10 @@ angular.module('MainCtrl', []).controller('MainController',
         */
 
         // ALT2: works
-        var callback = function(i) {
+        var callback = function(n) {
             return function(result) {
                 console.log(result.id);
-                console.log(i);
+                console.log(n);
            }
         }(i);
         ping.pingWait({'wait': mylist[i]}, callback);
