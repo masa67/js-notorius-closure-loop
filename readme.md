@@ -1,18 +1,17 @@
 
 # Introduction
 
-This is a simple demonstration of AngularJS and MEAN.
+This is a demonstration of the infamous loop issue or [the notorius closure loop](http://javascript.info/tutorial/closures) in JavaScript.
 
-The demo is based on two excellent tutorials on building a RESTful service with NodeJS, Express and MongoDB:
+In addition, this example contains fiddling with Angular promises, even though these two features are really separate.
 
-* [The Dead-Simple Step-by-Step Guide for Front-End Developers to Getting Up and Running with Node.JS, Express, Jade, and MongoDB](http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/)
-* [Creating a Simple RESTful Web App with Node.js, Express, and MongoDB](http://cwbuecheler.com/web/tutorials/2014/restful-web-app-node-express-mongodb/)
+The demo runs on an EAN stack (no 'M').
 
-This project takes the example system further by replacing the frontend with AngularJS. The backend is kept intact, except for replacing Jade with plain HTML (as it makes sense to learn AngularJS with plain HTML first).
+The interesting code is in `MainCtrl.js`. See the console for output.
 
 # Installation
 
-Follow the guidelines given in the two tutorials:
+The rough steps:
 
 * Install [Node.js](http://nodejs.org/).
 * Install Express:
@@ -21,15 +20,10 @@ Follow the guidelines given in the two tutorials:
     $ npm install -g express
     $ npm install -g express-generator
 
-* Install [MongoDB](https://www.mongodb.org). Start the daemon.
 * Install `node_modules`:
 
 
     $ npm install
-
-As an additional step, to get some initial data to the database:
-
-    $ mongo db-init/mean-template-init.js
 
 # Execution
 
@@ -41,7 +35,6 @@ Open the URL in a browser: `http://localhost:3000/`
 
 # Version History
 
-* v.2.0: Replaces `$http` in `UsersService` with `$resource`, the Angular way of accessing RESTful APIs.
 * v.1.0: The first functional version.
 
 # License
